@@ -1,0 +1,43 @@
+// main: ../style.less 
+
+.footer {
+	display: flex;
+	justify-content: center;
+
+}
+.footer__inner {
+	height: 15vh;
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer__logo {
+	display: flex;
+	align-items: center;
+}
+.footer__text {
+	font-size: 3rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #37374a;
+	margin-left: 1rem;
+}
+.footer__menu {
+	width: 70%;
+	ul{ 
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	}
+
+}
+.footer__menu-link {
+	text-decoration: none;
+	color: @gray;
+	font-size: 1.6rem;
+	&:hover {
+		color: #37374a;
+	}
+}

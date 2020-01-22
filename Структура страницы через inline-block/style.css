@@ -1,0 +1,97 @@
+/*code {
+  background: #2db34a;
+  border-radius: 32px;
+	border-top: 6px;
+  color: #fff;
+  display: block;
+  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  padding: 24px 15px;
+  text-align: center;
+}
+header,
+section,
+aside,
+footer {
+  margin: 0 1.5% 24px 1.5%;
+	;
+}
+section {
+  display: inline-block;
+  width: 30%;
+}
+footer {
+margin-bottom: 20px;
+  
+	
+}
+.test {
+	background: blue;
+	
+	
+	
+	
+}
+
+
+
+div {
+  background: #eaeaed;
+  height: 62px;
+  padding-top: 38px;
+  text-align: center;
+  width: 100px;
+}
+.offset {
+  background: none;
+  border: 2px dashed #9799a7;
+  height: 100px;
+  padding: 0;
+}
+.offset code {
+	position: relative;
+  background: #2db34a;
+  color: #fff;
+  display: block;
+  height: 74px;
+  left: 20px;
+  padding-top: 26px;
+  
+  text-align: center;
+  top: 20px;
+  width: 100px;
+}
+*/
+code {
+  color: #666;
+  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+}
+section,
+.offset,
+.offset code {
+  border-radius: 6px;
+  padding: 24px 30px;
+}
+section {
+  background: #eaeaed;
+  height: 145px;
+  position: relative;
+}
+.offset,
+.offset code {
+  height: 96px;
+  position: absolute;
+  width: 160px;
+}
+.offset {
+  border: 2px dashed #9799a7;
+  left: 222px;
+  top: 222px;
+
+}
+.offset code {
+  background: #2db34a;
+  color: #fff;
+  display: block;
+  right: 20px;
+  top: 20px;
+}

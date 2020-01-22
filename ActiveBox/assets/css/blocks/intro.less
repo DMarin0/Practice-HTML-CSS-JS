@@ -1,0 +1,60 @@
+// main: ../style.less
+
+.intro {
+	display: flex;
+	flex-direction: column;/*Каждый новый элемент начинается с новой строки/занимает 100% строки*/
+	justify-content: center;
+	padding-top: 100px;
+	height: 750px;
+	
+	background: #fff;
+	background-image: url("../images/bg.jpg");
+	background-size: cover;
+	background-position: center;
+	
+	@media @mobile {
+		height: auto;
+		padding-top: 130px;
+		padding-bottom: 30px;
+	}
+}
+.intro_inner {
+	width: 100%;
+	max-width: 970px;
+	margin: 0 auto;
+	text-align: center;
+	color: @white;
+
+
+}
+
+.intro__title {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 65px;
+	line-height: 1.1;
+	text-transform: uppercase;
+	margin-bottom: 45px;
+	
+	@media @notebook {
+		font-size: 5rem;
+	}
+	
+	
+	@media @mobile {
+		font-size: 3rem;
+	}
+
+}
+.intro__subtitle {
+	font-size: 22px;
+	font-weight: 400;
+	color: @white;
+	line-height: 1.5;
+	margin-bottom: 5rem;
+	
+	@media @mobile {
+		font-size: 1.4rem;
+	}
+}
+

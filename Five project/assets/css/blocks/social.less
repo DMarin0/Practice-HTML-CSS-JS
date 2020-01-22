@@ -1,0 +1,30 @@
+// main: ../style.less
+
+.social {
+	
+	margin-bottom: 42px;
+	display: flex;
+	z-index: 2;
+	@media @mobile-sm {
+		justify-content: center;
+		align-items: center;
+	
+	}
+}
+.social__link {
+	text-decoration: none;
+	margin-right: 10px;
+	transition: transform .1s linear;
+	&:hover {
+		transform: translateY(-5px);
+	}
+	
+	@media @mobile-sm {
+		width: 100%;
+		width: 35px;
+		height: 35px;
+		justify-content: center;
+		align-items: center;
+	
+	}
+}

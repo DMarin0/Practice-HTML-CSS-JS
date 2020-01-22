@@ -1,0 +1,48 @@
+//main: ../style.less
+
+.intro {
+  background: #f8f8f8;
+  overflow: hidden;
+}
+.intro__inner {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.intro__photo {
+  width: 50%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  @media @mobile {
+    width: 100%;
+  }
+}
+.intro__text {
+  position: absolute;
+  max-width: 140rem;
+  font-size: 40rem;
+  left: 20rem;
+  font-weight: bold;
+  top: 23rem;
+  letter-spacing: 18rem;
+  color: #575153;
+  display: none;
+}
+.intro__content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  margin: 7rem 0;
+  z-index: 1;
+  @media @mobile {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+  }
+  @media @mobile-sm {
+    top: 20%;
+  }
+}

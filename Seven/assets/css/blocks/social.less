@@ -1,0 +1,33 @@
+//main: ../style.less
+
+.offers__social {
+    display: flex;
+    justify-content: center;
+}
+.social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background: #8e8c8c;
+    margin-right: 1rem;
+    transition: background .2s linear;
+    &:hover {
+        background: #00c8c8;
+    }
+    &--footer {
+        background: none;
+        &:hover {
+            background: none;
+            border: 1px solid @white;
+        }
+    }
+}
+.social__icon {
+    fill: @white;
+    display: block;
+    height: 18px;
+    width: 18px;
+}

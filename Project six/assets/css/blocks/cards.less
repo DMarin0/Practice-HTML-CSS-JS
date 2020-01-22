@@ -1,0 +1,47 @@
+// main: ../style.less
+.cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-row-gap: 30px;
+	justify-items: center;
+}
+.cards__item {
+max-width: 348px;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	&:hover {
+		background: #fafaf9;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+}
+.cards__content {
+	padding: 25px;
+}
+.cards-info {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 25px;
+	
+	.money {
+		font-size: 18px;
+		color: #ffcc01;
+	}
+}
+.info__icon {
+	margin-right: 8px;
+	&:first-child {
+		margin-right: 18px;
+	}
+}
+
+
+
+@media @mobile {
+	.cards {
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-row-gap: 10px;
+	justify-items: center;
+	}
+}

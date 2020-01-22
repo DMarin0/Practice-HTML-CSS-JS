@@ -1,0 +1,74 @@
+// main: ../style.less
+
+.agents {
+	background: #f6f5f4;
+	padding: 30px 0;
+	margin-top: 30px;
+}
+.agents__title {
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+.agents__text {
+	font-size: 13px;
+	line-height: 30px;
+	
+	margin-bottom: 60px;
+}
+.agents__cards {
+	display: flex;
+	justify-content: space-between;
+}
+.agents__item {
+	max-width: 344px;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	transition: box-shadow .1s linear;
+		&:hover {
+			box-shadow: 0 0 10px rgba(0,0,0,0.7);
+			}
+	
+}
+.agents__info {
+	padding: 10px 0 10px 25px;
+	p{
+		font-size: 15px;
+		font-style: italic;
+	}
+}
+.agents__content {
+	display: flex;
+	justify-content: space-between;
+}
+.agents__name {
+	color: #ffcc01;
+}
+.agent__social {
+	
+	i {
+		position: relative;
+		color: #333;
+		margin-right: 15px;
+		transition: color .1s linear, top .1s linear;
+		&:last-child {
+			margin-right: 5;
+		}
+		&:hover {
+			color: #ffcc01;
+			top: -3px;
+		}
+	}
+}
+
+@media @mobile {
+	.agents {
+		text-align: center;
+	}
+	.agents__cards {
+		flex-direction: column;
+		align-items: center;
+	}
+	.agents__item {
+		margin-bottom: 20px;
+	}
+}

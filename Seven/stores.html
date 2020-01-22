@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Описание страницы">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Создание сайтов, вёрстка" />
+    <title>name</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!--SPrite-->
+    <svg style="display: none;">
+        <symbol id="shopping-cart" viewBox="0 0 510 510">
+            <g>
+                <path d="M153,408c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S181.05,408,153,408z M0,0v51h51l91.8,193.8L107.1,306
+					c-2.55,7.65-5.1,17.85-5.1,25.5c0,28.05,22.95,51,51,51h306v-51H163.2c-2.55,0-5.1-2.55-5.1-5.1v-2.551l22.95-43.35h188.7
+					c20.4,0,35.7-10.2,43.35-25.5L504.9,89.25c5.1-5.1,5.1-7.65,5.1-12.75c0-15.3-10.2-25.5-25.5-25.5H107.1L84.15,0H0z M408,408
+					c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S436.05,408,408,408z" />
+            </g>
+        </symbol>
+        <symbol id="like" viewBox="0 0 51.997 51.997">
+            <path d="M51.911,16.242C51.152,7.888,45.239,1.827,37.839,1.827c-4.93,0-9.444,2.653-11.984,6.905
+		c-2.517-4.307-6.846-6.906-11.697-6.906c-7.399,0-13.313,6.061-14.071,14.415c-0.06,0.369-0.306,2.311,0.442,5.478
+		c1.078,4.568,3.568,8.723,7.199,12.013l18.115,16.439l18.426-16.438c3.631-3.291,6.121-7.445,7.199-12.014
+		C52.216,18.553,51.97,16.611,51.911,16.242z M49.521,21.261c-0.984,4.172-3.265,7.973-6.59,10.985L25.855,47.481L9.072,32.25
+		c-3.331-3.018-5.611-6.818-6.596-10.99c-0.708-2.997-0.417-4.69-0.416-4.701l0.015-0.101C2.725,9.139,7.806,3.826,14.158,3.826
+		c4.687,0,8.813,2.88,10.771,7.515l0.921,2.183l0.921-2.183c1.927-4.564,6.271-7.514,11.069-7.514
+		c6.351,0,11.433,5.313,12.096,12.727C49.938,16.57,50.229,18.264,49.521,21.261z" />
+            </g>
+        </symbol>
+        <symbol id="arrow" viewBox="0 0 612 612">
+            <g>
+                <path d="M248.542,343.929H78.879c-10.452,0-18.917,8.428-18.917,18.842c0,10.395,8.465,18.84,18.917,18.84h125.351L0,584.979
+					l26.751,26.639l204.019-203.18l-0.592,123.822c0,10.395,8.465,18.84,18.917,18.84c10.452,0,18.917-8.426,18.917-18.84v-169.51
+					c0-5.58-2.312-10.09-5.981-13.186C258.573,346.126,253.815,343.929,248.542,343.929z M533.141,230.388H407.79L612,27.019
+					L585.248,0.382l-204,203.178l0.593-123.822c0-10.395-8.465-18.841-18.917-18.841s-18.917,8.427-18.917,18.841v169.51
+					c0,5.58,2.312,10.089,5.961,13.166c3.439,3.478,8.179,5.675,13.472,5.675h169.662c10.452,0,18.918-8.427,18.918-18.841
+					C552.038,238.834,543.573,230.388,533.141,230.388z" />
+            </g>
+        </symbol>
+
+
+    </svg>
+    <header class="header header--another" id="header">
+		<div class="container">
+			<div class="header__inner">
+				<a class="logo" href="index.html"><span>Avenue</span> Fashion</a>
+				<nav class="nav active" id="nav">
+					<div href="#" class="nav__link nav__link--menu">mens
+						<div class="nav__drop-menu">
+							<div class="nav__menu-col">
+								<div class="nav__menu-title">casual
+								</div>
+								<a href="#" class="nav__menu-item">Jackets</a>
+								<a href="#" class="nav__menu-item">Hoodies</a>
+								<a href="#" class="nav__menu-item">Polo</a>
+								<a href="#" class="nav__menu-item">Sport Shirt</a>
+								<a href="#" class="nav__menu-item">Boots</a>
+								<a href="#" class="nav__menu-item">Trousers</a>
+							</div>
+							<div class="nav__menu-col">
+								<div class="nav__menu-title">formal
+								</div>
+								<a href="#" class="nav__menu-item">Jackets</a>
+								<a href="#" class="nav__menu-item">shirts</a>
+								<a href="#" class="nav__menu-item">Suits</a>
+								<a href="#" class="nav__menu-item">Trousers Shirt</a>
+								<a href="#" class="nav__menu-item">Trousers</a>
+							</div>
+							<div class="nav__menu-sale">
+								Autum sale! <br> up to 50% off
+							</div>
+						</div>
+					</div>
+					<div href="#" class="nav__link nav__link--menu">wooments
+						<div class="nav__drop-menu">
+							<div class="nav__menu-col">
+								<div class="nav__menu-title">casual
+								</div>
+								<a href="#" class="nav__menu-item">Jackets</a>
+								<a href="#" class="nav__menu-item">Hoodies</a>
+								<a href="#" class="nav__menu-item">Polo</a>
+								<a href="#" class="nav__menu-item">Sport Shirt</a>
+								<a href="#" class="nav__menu-item">Boots</a>
+								<a href="#" class="nav__menu-item">Trousers</a>
+							</div>
+							<div class="nav__menu-col">
+								<div class="nav__menu-title">formal
+								</div>
+								<a href="#" class="nav__menu-item">Jackets</a>
+								<a href="#" class="nav__menu-item">shirts</a>
+								<a href="#" class="nav__menu-item">Suits</a>
+								<a href="#" class="nav__menu-item">Trousers Shirt</a>
+								<a href="#" class="nav__menu-item">Trousers</a>
+							</div>
+							<div class="nav__menu-sale">
+								Autum sale! <br> up to 50% off
+							</div>
+						</div>
+					</div>
+					<a href="brand.html" class="nav__link">the brand</a>
+					<a href="stores.html" class="nav__link">local stores</a>
+					<a href="lookbook.html" class="nav__link nav__link--menu">look book</a>
+					<form class="form" action="">
+						<input class="nav__search" type="text" placeholder="Search..">
+					</form>
+				</nav>
+				<button class="burger" type="button" id="navToggle">
+					<span class="burger__item">Menu</span>
+				</button>
+			</div>
+		</div>
+	</header>
+    <div class="brand">
+        <div class="brand-overlay"></div>
+        <div class="container">
+            <div class="brand__inner">
+                <h1 class="brand__title"><span>Local</span> stores</h1>
+                <h2 class="brand__subtitle">find a stores near you</h2>
+            </div>
+        </div>
+    </div> <!-- /.brand-->
+    <section class="stores">
+        <div class="container container--small">
+            <div class="stores__wrapper">
+                <div class="stores__col">
+                    <h2 class="stores__city">LONDON</h2>
+                    <div class="stores__adress">180-182 Regent Street, London, W1B 5BT</div>
+                    <div class="stores__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum
+                        ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis.
+                        Aliquam erat volutpat.
+                    </div>
+                    <button class="btn btn--intro">view details</button>
+                </div>
+                <div class="stores__col">
+                    <h2 class="stores__city">LONDON</h2>
+                    <div class="stores__adress">180-182 Regent Street, London, W1B 5BT</div>
+                    <div class="stores__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum
+                        ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis.
+                        Aliquam erat volutpat.
+                    </div>
+                    <button class="btn btn--intro">view details</button>
+                </div>
+                <div class="stores__col">
+                    <h2 class="stores__city">LONDON</h2>
+                    <div class="stores__adress">180-182 Regent Street, London, W1B 5BT</div>
+                    <div class="stores__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum
+                        ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis.
+                        Aliquam erat volutpat.
+                    </div>
+                    <button class="btn btn--intro">view details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map">
+        <iframe class="map__location"
+            src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x880e2ca55810a493%3A0x4700ddf60fcbfad6!2schicago+theatre!5e0!3m2!1sen!2sus!4v1388701393606"></iframe>
+        <div class="map__adress">
+            <h2 class="map__city">LONDON</h2>
+            <div class="map__adr">180-182 Regent Street, London, W1B 5BT</div>
+            <div class="map__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum
+                ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis.
+                Aliquam erat volutpat.
+            </div>
+            <div class="map__contacts">
+                <div class="contacts__item">
+                    <div class="contacts__icon">
+                        <img src="assets/images/location.svg" height="18" alt="">
+                    </div>
+                    <div class="contact__adress">180-182 Regent Street, London, W1B 5BT</div>
+                </div>
+                <div class="contacts__item">
+                    <div class="contacts__icon">
+                        <img src="assets/images/location.svg" height="18" alt="">
+                    </div>
+                    <div class="contact__adress">180-182 Regent Street, London, W1B 5BT</div>
+                </div>
+                <div class="contacts__item">
+                    <div class="contacts__icon">
+                        <img src="assets/images/location.svg" height="18" alt="">
+                    </div>
+                    <div class="contact__adress">180-182 Regent Street, London, W1B 5BT</div>
+                </div>
+                <div class="contacts__item">
+                    <div class="contacts__icon">
+                        <img src="assets/images/location.svg" height="18" alt="">
+                    </div>
+                    <div class="contact__adress">180-182 Regent Street, London, W1B 5BT</div>
+                </div>
+                <div class="offers__social">
+                    <div class="social__item">
+                        <a class="social__link" href="#">
+                            <svg class="social__icon">
+                                <use xlink:href="#shopping-cart">
+                                </use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="social__item">
+                        <a class="social__link" href="#">
+                            <svg class="social__icon">
+                                <use xlink:href="#like">
+                                </use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="social__item">
+                        <a class="social__link" href="#">
+                            <svg class="social__icon">
+                                <use xlink:href="#arrow">
+                                </use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <h4 class="footer__title">information</h4>
+                    <div class="footer__nav">
+                        <a href="#" class="footer__nav-link">The brand</a>
+                        <a href="#" class="footer__nav-link">Local Stores</a>
+                        <a href="#" class="footer__nav-link">Customer service</a>
+                        <a href="#" class="footer__nav-link">Privacy & cookies</a>
+                        <a href="#" class="footer__nav-link">Site map</a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">why buy from us</h4>
+                    <div class="footer__nav">
+                        <a href="#" class="footer__nav-link">Shipping & returns</a>
+                        <a href="#" class="footer__nav-link">Secure shopping</a>
+                        <a href="#" class="footer__nav-link">Testimonials</a>
+                        <a href="#" class="footer__nav-link">Award winning</a>
+                        <a href="#" class="footer__nav-link">Ethical trading</a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">your accaunt</h4>
+                    <div class="footer__nav">
+                        <a href="#" class="footer__nav-link">Sign in</a>
+                        <a href="#" class="footer__nav-link">Register</a>
+                        <a href="#" class="footer__nav-link">View cart</a>
+                        <a href="#" class="footer__nav-link">View your lookbook</a>
+                        <a href="#" class="footer__nav-link">Track an order</a>
+                        <a href="#" class="footer__nav-link">Update information</a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">lookbook</h4>
+                    <div class="footer__nav">
+                        <a href="#" class="footer__nav-link">Latest posts</a>
+                        <a href="#" class="footer__nav-link">Men's lookbook</a>
+                        <a href="#" class="footer__nav-link">Women's lookbook</a>
+                        <a href="#" class="footer__nav-link">Lookbooks RSS feed</a>
+                        <a href="#" class="footer__nav-link">Delete your lookbook</a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Contact details</h4>
+                    <div class="footer__nav">
+                        <a href="#" class="footer__nav-link">Head Office : Avenue Fashion <br> 180-182 Regent Street,
+                            London</a>
+                        <a href="#" class="footer__nav-link">Telehone: 0123-456-789</a>
+                        <a href="#" class="footer__nav-link">Email: support@yourwebsite.com</a>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer__media">
+                <div class="footer__inner footer__inner">
+                    <div class="footer__winner">
+                        <h5 class="winner__title">award winner</h5>
+                        <p class="winner__text">fashion awards 2016</p>
+                    </div>
+                    <div class="footer__social">
+                        <div class="social__item  social__item--footer">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon">
+                                    <use xlink:href="#shopping-cart">
+                                    </use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social__item social__item--footer">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon">
+                                    <use xlink:href="#like">
+                                    </use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social__item social__item--footer">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon">
+                                    <use xlink:href="#arrow">
+                                    </use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.footer-->
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright__inner">
+                <div class="copyright-date">&copy; 2018 Avenue Fashion</div>
+                <div class="copyright__develop">
+                    <div class="copyright__design">Design by Robby-Designs</div>
+                    <div class="copyright__dev">Dev by Loremipsum</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

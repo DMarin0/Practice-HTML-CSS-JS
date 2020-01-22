@@ -1,0 +1,62 @@
+// main: ../style.less 
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	padding: 1.4rem 4rem;
+	cursor: pointer;
+	border: 0;
+	border-radius: 2rem;
+	text-align: center;
+	font-family: inherit;
+	font-size: 1.3rem;
+	color: @gray;
+	background-color: #fff;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: background-color .2s linear, color .2s linear;
+	box-shadow: 0px 0px 18.69px 2.31px rgba(204, 204, 223, 0.5);
+	&--price {
+		&:hover {
+			background-color: #4f4f6f;
+			color: @white;
+		}
+	}
+	
+	&--menu {
+	border: 1px solid #fff;
+	padding: 10px 20px;
+	border-radius: 100px;
+	text-transform: uppercase;
+	margin-left: 60px;
+	box-shadow: none;
+	background-color: transparent;
+	color: #fff;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	&--action {
+		padding: 1.4rem 3rem;
+		width: 19rem;
+		box-shadow: none;
+		margin: 1rem;
+		&:hover {
+			background-color: #4f4f6f;
+			color: @white;
+		}
+	}	
+	&--footer {
+		padding: 1.4rem 3rem;
+		width: 19rem;
+		box-shadow: none;
+		margin: 1rem;
+		background-color: #4f4f6f;
+		color: #fff;
+		
+	}
+}
+
+
+
+

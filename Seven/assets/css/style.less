@@ -1,0 +1,61 @@
+// compress: true, sourceMap: true
+
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: @black;
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0 0 1rem;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*===========================================
+				VENDOR
+============================================*/
+
+// @import "vendor/slick"; /*Слайдер*/
+
+/*===========================================
+				BLOCKS
+============================================*/
+
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/btn";
+@import "blocks/offers";
+@import "blocks/social";
+@import "blocks/lookbook";
+@import "blocks/footer";
+@import "blocks/copyright";
+@import "blocks/brand";
+@import "blocks/galery";
+@import "blocks/stores";
+@import "blocks/map";
+@import "blocks/card";
+@import "blocks/burger";
+
+/*Helpers block's*/
+@import "vars"; /*Подключения файла с переменными*/
+@import "blocks/helpers";
+@import "blocks/mixins";
+

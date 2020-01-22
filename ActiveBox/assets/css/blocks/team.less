@@ -1,0 +1,55 @@
+// main: ../style.less
+.team {
+	margin: 100px 0 70px;
+	
+	@media @mobile {
+		margin: 5rem 2rem;
+	}
+}
+.team__inner {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -1.5rem;
+}
+.team__item {
+	width: 25%;
+	padding: 0 1.5rem;
+	margin-bottom: 3rem;
+	
+	@media @tablet {
+		width: 50%;
+		text-align: center;
+	}
+	
+	@media @mobile {
+		width: 100%;
+	}
+}
+.team__photo {
+	display: block;
+	height: auto;
+	max-width: 100%;
+	margin-bottom: 2rem;
+	@media @tablet {
+		margin: 0 auto;
+	}
+	
+}
+.team__name {
+	font-size: 2.2rem;
+	color: @black;
+	margin-bottom: 1rem;
+}
+.team__prof {
+	font-size: 1.3rem;
+	color: #e84545;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+}
+.team__text {
+	font-size: 1.4rem;
+	color: @gray;
+	line-height: 1.5;
+	margin-bottom: 2rem;
+}
+

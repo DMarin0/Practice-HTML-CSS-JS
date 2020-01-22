@@ -1,0 +1,36 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3 {
+	margin: 0;
+}
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 800px;
+	
+	margin: 50px 0;
+	
+}
+.intro__block {
+	text-align: center;
+ width: 100%;
+}
+
+
+.title {
+	color: rgb(238,174,202);
+	
+	
+	
+}
+h1 {
+
+  font-size: 72px;
+  background: linear-gradient(90deg, rgba(238,174,202,1) 8%, rgba(148,187,233,1) 82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

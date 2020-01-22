@@ -1,0 +1,30 @@
+// main: ../style.less
+
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	padding: 1.4rem 4rem;
+	cursor: pointer;
+	border: 0;
+	border-radius: .3rem;
+	
+	font-family: inherit;
+	font-size: 1.3rem;
+	color: @white;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: background-color .2s linear;
+	
+	&--red {
+		background-color: #e84545;
+		
+		&:hover {
+			background-color: #f22f2f;
+		}
+	}
+	
+	&--big {
+		padding: 1.4rem 6rem;
+	}
+}

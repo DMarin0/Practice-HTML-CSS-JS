@@ -1,0 +1,765 @@
+body {
+    margin: 0;
+    font-family:'Raleway', sans-serif;
+    font-size: 14px;
+	color: #6c7279;
+    background-color: #fff;
+	-webkit-font-smoothing: antialiased;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+p {
+	margin: 0 0 10px 0;
+}
+/*=============================
+
+            Container
+
+=============================*/
+.container {
+    width: 100%;
+    max-width: 1200px;
+	padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+
+
+/*=============================
+
+            Header
+
+=============================*/
+
+.header {
+	width: 100%;
+	height: 100px;
+	position: absolute; /*Для того, чтобы сделать нашу шапку поверх бг*/
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+.header.fixed {
+	height: auto;
+	position: fixed; /*Фиксирует шапку, когда используется данный класс*/
+	background-color: #31344e;
+}
+.header__logo {
+	cursor: pointer;
+	outline: 0;
+}
+.header.fixed .header__inner {
+	border-bottom: 0;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+.header__inner {
+    display: flex;
+   	justify-content: space-between;
+    border-bottom: 1px solid #515369;
+    padding: 35px 0;
+	align-items: center;
+
+}
+
+/*=============================
+
+            Navigation
+
+=============================*/
+.nav {
+	display: flex;
+    font-weight: 700;
+    font-size: 13px;
+}
+.nav__link {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+   	margin-left: 50px;
+	opacity: .75;
+	transition: opacity .1s linear;
+}
+.nav__link:first-child {
+	margin-left: 0;
+}
+.nav__link:hover {
+	opacity: 1;
+}
+
+/*=============================
+
+           Burger
+
+=============================*/
+
+
+.burger {
+	display: none;
+	background: none;  /*Убираем стандартные стили кнопки*/
+	border: 0;
+	cursor: pointer;
+	padding: 9px 5px;
+	outline: 0;
+
+}
+.burger__item {
+	display: block;
+	width: 30px;
+	height: 3px;
+	background-color: #fff;
+	position: relative;
+	font-size: 0;
+	color: transparent;
+	margin-right: 10px;
+	
+}
+.burger__item:before,
+.burger__item:after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	background-color: #fff;
+		
+}
+.burger__item:before {
+	top: -8px;
+}
+.burger__item:after {
+	bottom: -8px;
+}
+ 
+/*=============================
+
+            Intro
+
+=============================*/
+
+.intro {
+	display: flex;
+	flex-direction: column;  /*Каждый новый элемент блока Интро будет начинаться с новой строки*/
+	justify-content: center; /*Выравнивает по центру по ВЕРТИКАЛИ*/
+	padding-top: 100px; /*Т.к шапка шириной 100px, мы делаем отступ от верха 100px для того, чтобы раздел начинался после шапочки*/
+	height: 750px;
+	background: #fff;
+/*	background-image: url("../images/bg.jpg");*/
+	background-size: cover;
+	background-position: center;
+}
+.intro__inner {
+	width: 100%;
+	max-width: 970px;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+
+
+}
+.intro__title {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 65px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1.1;
+	margin-bottom: 45px;
+}
+.intro__subtitle {
+	font-size: 22px;
+	line-height: 1.5;
+	font-weight: 400;
+	margin-bottom: 80px;
+
+}
+
+/*=============================
+
+            Button
+
+=============================*/
+
+.btn {
+	display: inline-block; /*Чтобы можно было задавать пэддинги*/
+	vertical-align: top; /*выравнивание по верху вертикали*/
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: 600;
+	border: 0;
+	cursor: pointer;
+	border-radius: 3px;
+	font-family: inherit;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 20px 55px;
+	transition: background .1s linear;
+}
+
+.btn--red {
+	background-color: #e84545;
+}
+.btn--red:hover {
+	background-color: #f83737;
+}
+.btn--long {
+	min-width: 280px;
+}
+
+
+/*=============================
+
+            Features
+
+=============================*/
+
+
+.features {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 95px 0;
+}
+
+.features__item {
+	width: 33.33333%;
+	text-align: center;
+	padding: 0 40px;
+	margin: 30px 0;
+}
+.features__icon {
+	margin-bottom: 25px;
+}
+.features__title {
+	margin-bottom: 20px;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #333;
+}
+.features__text {
+	font-size: 14px;
+	color: #6c7279;
+	line-height: 1.5;
+}
+
+/*=============================
+
+            Works
+
+=============================*/
+
+.works {
+	display: flex;
+	flex-wrap: wrap;
+}
+.works__item {
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
+	
+	width: 25%;
+	height: 350px;
+	position: relative;
+	overflow: hidden;
+	
+}
+.works__item:hover .works__content {
+	opacity: 1;
+}
+.works__photo {
+	position: absolute;
+	top: 50%;
+	left: 50%; /*Здесь мы выравниваем картинку в блоке item по ширине блока. ЭТО ВАЖНО ДЕН*/
+	z-index: 1;
+	transform: translate3d(-50%, -50%,0);
+	min-width: 100%;
+}
+.works__content {
+	display: flex;
+	flex-direction: column; /* каждый новый элекмент будет начинаться с новой строки!*/
+	justify-content: center; /*Выравниваем по вертикали*/
+	text-align: center; /*Выравниваем по горизонтали*/
+	width: 100%;
+	height: 100%;
+	background-color: rgba(323, 69, 69, .9);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2; /*Здесь индекс 2, за счёт этого контент будет поверх фотографии*/
+	color: #fff;
+	opacity: 0;
+	transition: opacity .2s linear;
+
+}
+.works__title {
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.works__text {
+	font-size: 14px;
+}
+
+/*=============================
+
+            Team
+
+=============================*/
+
+.team {
+	margin: 100px 0 70px 0;
+}
+.team__inner {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+}
+.team__item {
+	width: 25%;
+	padding: 0 15px;
+	margin-bottom: 30px;
+}
+.team__photo {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+.team__name {
+	font-size: 22px;
+	color: #2d3033;
+	margin-bottom: 8px;
+}
+.team__prof {
+	font-size: 13;
+	text-transform: uppercase;
+	color: #e84545;
+	margin-bottom: 15px;
+}
+.team__text {
+	font-size: 14px;
+	color: #6c7279;
+	line-height: 1.5;
+	margin-bottom: 20px;
+
+}
+
+
+/*=============================
+
+            Social
+
+=============================*/
+.social {
+	display: flex;
+	justify-content: center;
+}
+.social--foter {
+	justify-content: center;
+}
+.social__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	border: 1px solid #e8ecee;
+	margin-right: 5px;
+	transition: background .1s linear;
+}
+.social__item:hover {
+	background-color: #e8ecee;
+}
+.social__item:hover .social__icon {
+	fill: #e84545;
+}
+.social__icon {
+	display: block;
+	height: 18px;
+	fill: #716b6b;
+	transition: fill .1s linear;
+}
+.social--foter .social__item {
+	background: transparent;
+	border: 2px solid #e8ecee;
+	border-radius: 2px;
+}
+.social--foter .social__icon {
+	fill: #fff;
+}
+.social--foter .social__item:hover {
+	background: #fff;
+}
+
+
+/*=============================
+
+            Reviews
+
+=============================*/
+
+.reviews {
+	background-color: #53354a;
+	overflow: hidden;
+}
+.reviews__slider {  /*Добавляем это для того, чтобы слайдер не мигал, когда перезагружаем страницу*/
+	height: 500px;   
+	overflow: hidden;
+}
+.reviews__slider.slick-initialized {
+	height: auto;
+}
+.reviews__item {
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+.reviews__photo {
+	width: 50%;
+	height: 500px;
+	position: relative;
+}
+.reviews__img {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	z-index: 1;
+	transform: translateY(-50%);
+}
+.reviews__content {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding-left: 80px;
+	justify-content: center;
+}
+.reviews__text {
+	font-style: italic;
+	font-size: 36px;
+	line-height: 1.2;
+	color: #fff;
+	font-family: 'Cardo', serif;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.reviews__author {
+	font-size: 13;
+	line-height: 1.5;
+	color: #fff;
+	text-transform: uppercase;
+}
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0 0 15px 0;
+	list-style: none;
+	
+	width: 50%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+}
+.slick-dots li {
+	margin: 0 5px;
+}
+.slick-dots button {
+	width: 15px;
+	height: 15px;
+	background: fff;
+	border-radius: 50%;
+	opacity: .5;
+	border: 0;
+	padding: 0;
+	font-size: 0;
+	color: transparent;
+}
+.slick-dots button:focus {
+	outline: 0;
+}
+.slick-dots .slick-active button
+{
+	opacity: 1;
+}
+
+/*=============================
+
+            Download
+
+=============================*/
+
+.download {
+	margin: 90px 0;
+	text-align: center;
+	color: #333;
+}
+.download__title {
+	font-weight: 300;
+	margin-bottom: 10px;
+	font-size: 28px;
+	line-height: 1.1;
+}
+.download__text {
+	margin-bottom: 20px;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.1;
+}
+
+/*=============================
+
+            footer
+
+=============================*/
+
+.footer {
+	background-color: #3a3e64;
+}
+.footer__inner {
+	padding: 70px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer__block {
+	width: 33.3333%;
+	text-align: center;
+	padding: 0 15px; /*Отделяем блоки друг от друга*/
+}
+.footer__title {
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 1.1;
+	margin-bottom: 20px;
+}
+.footer__adress {
+	font-style: normal;
+	line-height: 1.5;
+	font-size: 14px;
+	color: rgba(255, 255, 255, .6)
+		
+}
+.footer__text {
+	line-height: 1.5;
+	font-size: 14px;
+	color: rgba(255, 255, 255, .6)
+		
+}
+
+
+
+/*=============================
+
+            copyright
+
+=============================*/
+
+.copyright {
+	background-color: #313454;
+	padding: 30px 0;
+}
+.copyright__text {
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #808080;
+}
+.copyright__author {
+	color: red;
+}
+.copyright__text span {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: rgba(255,255,255, .7);
+	line-height: 1.5;
+}
+
+
+/*=============================
+
+            MEDIA REQUESTs
+
+=============================*/
+			/* 1300PX */
+@media (max-width: 1300px){
+	
+	
+			/* WORKS	*/
+	.works__item {
+		width: 50%;
+	}
+}
+
+
+		/* 991PX */
+@media (max-width: 991px) {
+	
+		/*	Navigation 	*/
+	.nav {  /*Cтилизация выпадающего меню навигации*/
+		display: none;
+		width: 100%;
+		text-align: right; /*прижимаем все наши ссылки к правому краю*/
+		background-color: #31344e;
+		flex-direction: column;
+		position: absolute;
+		top: 100%; /*Отодвигаем навигацию на 100% от высоты нашей шапки*/
+		right: 0;
+	}
+	.nav.show {
+		display: flex; /*Отображение нагивации*/
+	}
+	.nav__link {
+		padding: 12px 15px;
+	}
+	
+		/*	Burger 	*/
+	.burger {
+		display: block;
+	}
+	
+		/*	Intro 	*/
+	.intro__title {
+		font-size: 40px;
+	}
+	.intro__subtitle {
+		font-size: 20px;
+	}
+	
+		/*Features	*/
+	.features__item {
+		width: 50%;
+	}
+	
+	
+		/*	Team */
+	
+	.team__item {
+		width: 50%;
+		text-align: center;
+	}
+	.team__photo {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.social {
+		justify-content: center;
+	}
+	
+	/* Reviews	*/
+	
+	.reviews__photo {
+		width: 100%;
+		margin: 15px 0 40px;
+		overflow: hidden;
+	}
+	.reviews__content {
+		width: 100%;
+		padding-left: 0;
+		padding-bottom: 40px;
+	}
+	
+}
+
+			
+			/* 767PX */
+@media (max-width: 767px) {
+		
+	
+		/*	Intro 	*/
+
+	.intro {
+		height: auto; /*Автоматически адаптируется по высоте*/
+		padding-top: 130px;
+		padding-bottom: 30px;
+	}
+	.intro__title {
+		font-size: 25px;
+		margin-bottom: 25px;
+	}
+	.intro__subtitle {
+		font-size: 17px;
+		margin-bottom: 30px;
+	}
+	
+		/*Features	*/
+	.features {
+		margin: 40px 0;
+	}
+	.features__item {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	
+		/* WORKS	*/
+	.works__item {
+		width: 100%;
+		border-right: 0;
+		border-bottom: 2px solid #fff;
+		height: 300px;
+	}
+	
+		/*	Team */
+	
+	.team {
+		margin: 60px 0 30px;
+	}
+	.team__item {
+		width: 100%;
+		text-align: center;
+		
+	}
+	
+		/*	Reviews 	*/
+	
+	.reviews__text {
+		font-size: 26px;
+	}
+	
+		/*	download,btn 	*/
+	.download {
+		margin: 50px 0;
+	}
+	.download__title {
+		font-size: 24px;
+	}
+	.btn--long {
+		min-width: 260px;
+	}
+	
+		/*	footer 	*/
+	.footer__inner{
+		padding: 50px 0 20px;
+	}
+	.footer__block {
+		padding-left: 0;
+		padding-right: 0;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.footer__title {
+		margin-bottom: 10px;
+	}
+}
+
+
+			/* 414PX */
+@media (max-width: 414px) {
+		/*	REviews 	*/
+	.reviews__img {
+		right: -120px;
+	}
+}

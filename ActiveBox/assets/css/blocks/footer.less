@@ -1,0 +1,62 @@
+// main: ../style.less
+
+.footer {
+	padding: 7rem 0;
+	background-color: #3a3e64;
+	
+	@media @mobile {
+		padding: 3rem 0;
+	}
+}
+.footer__inner {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+.footer__item {
+	width: 33.3333%;
+	
+	
+
+	@media @mobile {
+		width: 100%;
+		margin-bottom: 2rem;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+.footer_title {
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: @white;
+	margin-bottom: 1.3rem;
+}
+.footer_adress {
+	font-size: 1.4rem;
+	color: fade(@white, 50%)
+}
+.footer__text {
+	font-size: 1.4rem;
+	line-height: 1;
+	color: fade(@white, 50%)
+}
+.copyright {
+	text-align: center;
+	padding: 3rem 0;
+	background-color: #313454;
+}
+.copyright__text {
+	font-size: 1.4rem;
+    line-height: 1.5;
+    color: #808080;
+	
+	em {
+		color: #e84545;
+	}
+	span {
+		color: @white;
+	}
+}
